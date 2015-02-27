@@ -62,6 +62,10 @@ public class BulkConnection {
     private ConnectorConfig config;
     private HashMap<String, String> headers = new HashMap<String, String>();
     public static final TypeMapper typeMapper = new TypeMapper();
+    
+    public BulkConnection()
+    {    	
+    }
 
     public BulkConnection(ConnectorConfig config) throws AsyncApiException {
         if (config == null) {
